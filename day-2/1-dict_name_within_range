@@ -1,0 +1,6 @@
+def is_in_range(n,r):
+    if n>=r['min'] and n<=r['max']:
+        print("Within Range")
+    else:
+        print("num not in range")
+is_in_range(6,{'min':1,'max':10})
