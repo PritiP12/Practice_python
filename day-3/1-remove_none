@@ -1,0 +1,5 @@
+def remove_none(lst):
+    x=list(filter(lambda v:v is not None,lst))
+    print(x)
+remove_none(["a", None, "b", None])
+remove_none([None, None, None, None, None])
