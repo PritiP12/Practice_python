@@ -1,0 +1,5 @@
+str1="science is hardest lang ever"
+
+vowel='aeiou'
+res1="".join([i for i in str1 if i.lower() not in vowel])
+print(res1)
