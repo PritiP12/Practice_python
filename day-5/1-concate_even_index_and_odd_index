@@ -1,0 +1,5 @@
+def index(txt):
+  even=''.join(i for i in txt[::2])
+  odd=''.join(i for i in txt[1::2])
+  return even+odd
+print(index("Hello World"))
