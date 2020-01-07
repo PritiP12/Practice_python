@@ -1,0 +1,7 @@
+'''a function that takes three number arguments — one number as an input and two additional 
+numbers representing the endpoints of a closed range —
+and return the number limited to this range.
+'''
+def limit_number(num, range_low, range_high):
+	return (sorted([num, range_low, range_high]))[1]
+print(limit_number(4.6, 1, 10))
