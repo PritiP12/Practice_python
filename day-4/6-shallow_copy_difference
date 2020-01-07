@@ -1,0 +1,5 @@
+list1 = [0,'cat','rat']
+list2 = list1.copy()
+list2.append('dog')
+print("List1:",list1)
+print("List2:",list2)
