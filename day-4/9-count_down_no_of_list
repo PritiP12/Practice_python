@@ -1,0 +1,5 @@
+#takes a number as an argument and returns a list of numbers counting down from this number to zero
+
+def countdown(start):
+	return [i for i in range(start,-1,-1)]
+print(countdown(5))
