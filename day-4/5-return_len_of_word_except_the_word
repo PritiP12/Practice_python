@@ -1,0 +1,3 @@
+sen="python is the most popular lang"
+len_sen=[len(x) for x in sen.split() if (x.lower()!='the')]
+print(len_sen)
