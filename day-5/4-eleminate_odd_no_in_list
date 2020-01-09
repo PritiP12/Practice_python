@@ -1,0 +1,4 @@
+def no_odds(lst):
+	x=list(filter(lambda a:a%2==0,lst))
+	return x
+no_odds([1,2,3,4,5])
