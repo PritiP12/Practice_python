@@ -1,0 +1,4 @@
+def cesorword(txt,lst,char):
+  	x=[char*len(word) if word in lst else word for in txt.split()]
+print("".join(x)
+censorword("Hello word!", ["word"], "-"))
