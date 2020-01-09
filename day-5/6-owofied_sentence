@@ -1,0 +1,3 @@
+def owofied(sentence):
+	return sentence.replace('i','wi').replace('e','we')+' owo'
+print(owofied("Do you ever feel like a plastic bag"))
