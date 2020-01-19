@@ -1,0 +1,102 @@
+str = 'Hello World'
+print('str=' ,str)
+
+print('str[0]=',str[0])                 #first character
+print('str[-1]=',str[-1])               #last character
+print('str[1:5]=',str[1:5])             #slicing 2nd to 5th character
+print('str[5:-2]=',str[5:-2])           #slicing 6th to 2nd last character
+print('str[2:10:2]',str[2:10:2])        # Prints substring stepping up 2nd character
+                                        # from 2nd to 10th character
+
+print(str.strip())                      #remove any whitespaces
+print(str.lower())                      # Coverting string into its lower case
+print(str.upper())                      # Coverting string into its upper case
+print(str.replace("o","e"))
+print(str.split(","))
+print(str.swapcase())                   # Coverting string into its swapped case
+print(str.title())                      # Coverting string into its title case
+print(str.center(20,'-'))               # Printing the string after centering with '-'
+print(str.ljust(20,'_'))                # Printing the string after ljust()
+print(str.rjust(20,'-'))                # Printing the string after rjust()
+'''
+count = 0
+for letter in 'hello world':
+    if(letter == 'l'):
+        count += 1
+print(count)
+
+#default (implicit) order
+default_order = "{},{} and {}".format('a','b','c')
+print(default_order)
+#order using positional argument
+pos_order ="{1},{0} and {2}".format('a','b','c')
+print(pos_order)
+#order using keyword argument
+key_order ="{a},{b} and {c}".format(a='a',b='b',c='c')
+print(key_order)
+'''
+str1="Python is popular language"
+str2="popular"
+# using find() to find first occurrence of str2
+# returns 10
+print ("The first occurrence of str2 is at : ", end="")
+print(str1.find(str2))
+#using rfind() to find last occurrence of str2
+# return 10
+print(str1.rfind(str2))
+
+# Python code to demonstrate working of
+# startswith() and endswith()
+str1="Python is popular language"
+str2="Python"
+# using startswith() to find if str
+if str1.startswith(str2):
+    print("str1 begin with:" +str2)
+else:
+    print("str1 does not begin with str2:"+str2)
+
+# using endswith() to find
+if str1.endswith(str2):
+    print("str1 end with:",+str2)
+else:
+    print("str1 does not ens with :"+str2)
+
+# Python code to demonstrate working of
+# isupper() and islower()
+str1="Python is popular language"
+str2="Python"
+# checking if all characters in str are upper cased
+if str1.isupper():
+    print("All character in str are uppar cased")
+else:print("not uppar case")
+# checking if all characters in str1 are lower cased
+if str1.islower():
+    print("lower")
+else:print("is not lower")
+
+# Python code to demonstrate working of
+# isalpha(), isalnum(), isspace()
+str1="Python is popular language"
+str2="8855"
+# Checking if str has all alphabets
+if (str2.isalpha()):
+    print("All characters are alphabets in str2")
+else:
+    print("Not alphabet")
+
+# Checking if str1 has all numbers
+if (str2.isalnum()):
+    print("All characters are numbers in str2")
+else:
+    print("All characters are not numbers in str2")
+# Checking if str1 has all spaces
+if (str2.isspace()):
+    print("All characters are spaces in str2")
+else:
+    print("All characters are not spaces in str2")
+
+# Python code to demonstrate working of
+# join() : This function is used to join a sequence of strings mentioned in its arguments with the string
+str1="_"
+str2="def"
+print(str1.join(str2))
