@@ -1,0 +1,9 @@
+#add a and b using __add__ in class:
+class cal:
+    def __init__(self,a,b):
+        self._a=a
+        self._b=b
+    def __add__(self):
+        return self._a+self._b
+calObj=cal(10,20)
+print(calObj.__add__())
