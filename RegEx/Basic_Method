@@ -1,0 +1,33 @@
+import re
+
+str1="you need to learn what you need to learning"
+
+#Performing Matches:
+
+print(re.search("learn",str1)) #Determine if the RE matches at the beginning of the string
+
+print(re.findall("learn",str1)) #Find all substrings where the RE matches, and returns them as a list.
+
+k=re.search("what",str1)
+print(k.start(),k.end())    #get index position
+
+#Find all substrings where the RE matches, and returns them as an iterator.
+for i in re.finditer("learn",str1):
+    #print(i.start(),i.end())
+    loc=i.span()
+    print(loc)
+    
+#search specific sequence
+
+str1="cat hat mat rat pat sat"
+print(re.findall("[h-r]at",str1)) #output should be:['hat', 'mat', 'rat', 'pat']
+
+print(re.findall("[c,s]at",str1)) #output:['cat', 'sat']
+
+print(re.findall("[^h-r]at",str1)) #output:['cat', 'sat']
+
+print(re.sub("cat","food",str1))    #for replace #output:food hat mat rat pat sat
+
+str2="01234567890123456789"
+print(re.findall("[0-3]",str2)) #output:['0', '1', '2', '3']
+print(re.search("[0-3]",str2))
