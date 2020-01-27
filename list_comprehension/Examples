@@ -1,0 +1,96 @@
+#add 2 in every element:
+#output should be:[4, 7, 5, 10, 11, 6]
+lst=[2,5,3,8,9,4]
+list2=[(i+2) for i in lst]
+print(list2)
+
+#Square for odd number:
+#output should be:[81, 49, 25, 49]
+lst=[8,9,7,5,2,4,6,7]
+odd=[i*i for i in lst if i%2!=0 ]
+print(odd)
+
+#multiply every element if that element should be greater than 5 else multiply by 2
+#output should be:[2, 4, 6, 8, 10, 12, 49, 16, 81]
+lst1=[1,2,3,4,5,6,7,8,9]
+result=[i*i if(i%2!=0 and i>5) else i*2 for i in lst1]
+print(result)
+
+#multiply by 2 if i in range 3-5 or multiply by 3 if i in range 5-9 else multiply by 4
+#output should be:[4, 8, 6, 8, 15, 18, 21, 24, 36, 40]
+list1=[1,2,3,4,5,6,7,8,9,10]
+res=[i*2 if(i>=3 and i<5) else i*3 if(i>=5 and i<9)  else i*4 for i in list1 ]
+print(res)
+
+#Add two list
+#output should be:[5, 7, 9]
+list1=[1,2,3]
+list2=[4,5,6]
+addition=[list1[i]+list2[i] for i in range(len(list1))]
+print(addition)
+
+#length of word except 'the' word
+sen="python is the most popular lang"
+len_sen=[len(x) for x in sen.split() if (x.lower()!='the')]
+print(len_sen)
+
+#print vowel in that sentence:
+str1="science"
+res=[x for x in str1 if x in ['a','e','i','o','u']]
+print(res)
+
+#remove vowel
+str1="science is hardest lang ever"
+vowel='aeiou'
+res1="".join([i for i in str1 if i.lower() not in vowel])
+print(res1)
+
+#add 'the' at starting pos:
+lst=['a','b','c']
+x=['the '+i for i in lst]
+print(x)
+
+#add 3 in every element:
+l1=[1,2,3,4,5,6,7,8]
+def add(x):
+    return x+3
+x=[add(i) for i in l1]
+print(x)
+
+#reverse word from sentence:
+str1="This is Radical Technologies"
+a=[i[::-1] for i in str1.split()]#i.reverse()
+print(a)
+
+#remove word if word contain 'a' nd 'e'
+str1="This is radical technologies"
+a=['a','e']
+x=[i for i in str1.split() if not("a" in i and "e" in i)==True]
+print(" ".join(x))
+
+#if Vowel word in string count that word lengh
+txt=str1="This is redical technologies"
+z="aeiou"
+x=[len(i) for i in txt.split() if ('a'in i or 'e'in i or 'i'in i or 'o'in i or 'u' in i)==True]
+
+#print number is even or odd:
+l1=[1,2,3,4,5,6,7,8,9,10]
+x=" ".join([print('even') if (i%2)==0  else print('odd') for i in l1])
+OR
+obj = [f"{i} is Even" if i%2==0 else f"{i} is odd" for i  in range(20)]
+print("\n ".join(obj))
+
+#nested for loop in list cpmphresion:
+l1=[[1],[2],[3]]
+x=[j for i in l1 for j in i] 
+print(x)
+
+output:[1,2,3]
+
+#update dictionary :
+
+dict1={"1":1,"2":2}
+z=[dict1.update({str(i):dict1[i]+1}) for i in dict1.keys()]
+print(dict1)
+
+output:{'1': 2, '2': 3}
