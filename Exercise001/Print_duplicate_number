@@ -1,0 +1,7 @@
+#print duplicate number in given list
+
+lst1=[1,2,2,3,4,5,5,1]
+x=set([i for i in lst1 if lst1.count(i)>1 ])
+print(list(x))
+
+#output:[1, 2, 5]
